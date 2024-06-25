@@ -229,6 +229,7 @@ header {
     align-items: center;
   }
   .travel-top {
+    width: 412px;
     order: 1;
   }
   .section1 .layer {
@@ -249,3 +250,21 @@ header {
     justify-content: start;
   }
 }
+/*home section 2's mobile style  */
+.section2 {
+  padding: 32px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 27px;
+  margin-bottom: 107px;
+}
+/*home section 2's tablet style  */
+@media (min-width: 768px) {
+  .section2 img {
+    width: 211.827px;
+    height: 32px;
+  }
+}
+
