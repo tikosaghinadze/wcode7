@@ -41,7 +41,7 @@ header {
   display: none;
 }
 /* header's tablet responsive */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .left-menu {
     display: flex;
   }
@@ -79,9 +79,12 @@ header {
 }
 
 /* header's desktop responsive */
-@media (min-width: 1350px) {
+@media (min-width: 1440px) {
   .left-menu {
     display: none;
+  }
+  .pages-list {
+    display: block;
   }
   .pages-list {
     display: flex;
@@ -145,6 +148,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  justify-content: center;
+  align-items: center;
 }
 .getstart-btn {
   padding: 24px 32px;
@@ -162,6 +167,7 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  max-width: 398px;
 }
 .play-btn {
   padding: 24px 32px;
@@ -172,6 +178,7 @@ header {
   border-radius: 100px;
   border: 1px solid #eee;
   background: #fff;
+  width: 398px;
 }
 .play-btn img {
   width: 24px;
@@ -186,7 +193,7 @@ header {
   line-height: 120%;
 }
 /* section 1's tablet design */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .section1 {
     margin: 64px 0;
     gap: 64px;
@@ -222,7 +229,7 @@ header {
 }
 
 /* section 1's desktop design */
-@media (min-width: 1350px) {
+@media (min-width: 1440px) {
   .section1 {
     flex-direction: row;
     justify-content: center;
@@ -261,7 +268,7 @@ header {
   margin-bottom: 107px;
 }
 /*home section 2's tablet style  */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .section2 img {
     width: 211.827px;
     height: 32px;
@@ -391,6 +398,9 @@ header {
   width: 24px;
   height: 24px;
 }
+.left-menu {
+  display: none;
+}
 /*home section 3's tablet style  */
 @media (min-width: 768px) {
   .section3 {
@@ -422,5 +432,12 @@ header {
   .destination-divs {
     flex-direction: row;
   }
+  .destination {
+    max-width: 373px;
+  }
 }
-
+@media (min-width: 1440px) {
+  .destination-divs {
+    justify-content: space-between;
+  }
+}
