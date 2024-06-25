@@ -25,6 +25,9 @@ header {
 .login-div {
   display: none;
 }
+.pages-list {
+  display: none;
+}
 /* header's tablet responsive */
 @media (min-width: 768px) {
   .left-menu {
@@ -64,3 +67,25 @@ header {
 }
 
 /* header's desktop responsive */
+@media (min-width: 1350px) {
+  .left-menu {
+    display: none;
+  }
+  .pages-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+  }
+  .pages-list li {
+    color: rgba(25, 24, 37, 0.5);
+    font-family: "Poppins";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  #home-title {
+    color: #222831;
+  }
+}
