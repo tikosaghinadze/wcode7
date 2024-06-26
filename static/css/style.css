@@ -1,21 +1,12 @@
 body {
-  padding: 32px 16px;
-}
-@media (min-width: 768px) {
-  body {
-    padding: 32px;
-  }
-}
-@media (min-width: 768px) {
-  body {
-    padding: 32px 64px;
-  }
+  overflow-x: hidden;
 }
 /* header's styles */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 32px 16px;
 }
 .logo-div {
   display: flex;
@@ -42,6 +33,9 @@ header {
 }
 /* header's tablet responsive */
 @media (min-width: 1024px) {
+  header {
+    padding: 32px 64px;
+  }
   .left-menu {
     display: flex;
   }
@@ -80,6 +74,9 @@ header {
 
 /* header's desktop responsive */
 @media (min-width: 1440px) {
+  header {
+    padding: 36px 128px;
+  }
   .left-menu {
     display: none;
   }
@@ -110,6 +107,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding: 16px;
 }
 .section1 img {
   width: 100%;
@@ -197,6 +195,7 @@ header {
   .section1 {
     margin: 64px 0;
     gap: 64px;
+    padding: 0px 126px;
   }
   .travel-top {
     gap: 43px;
@@ -279,6 +278,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding: 16px;
 }
 .top-destination {
   display: flex;
@@ -405,6 +405,7 @@ header {
 @media (min-width: 768px) {
   .section3 {
     gap: 67px;
+    padding: 128px;
   }
   .pink-title {
     font-size: 23px;
@@ -439,5 +440,98 @@ header {
 @media (min-width: 1440px) {
   .destination-divs {
     justify-content: space-between;
+  }
+}
+
+/*home section 4's mobile style  */
+.section4 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 64px;
+  margin-bottom: 107px;
+  padding: 0px 16px;
+}
+.travel-point {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.travel-pink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.travel-pink span {
+  padding-bottom: 16px;
+  color: #f85e9f;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+.bold-p {
+  padding-bottom: 32px;
+  color: #191825;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.light-p {
+  color: rgba(25, 24, 37, 0.5);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 160%;
+}
+.offers ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+.offers ul li {
+  width: 398px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  border-radius: 32px;
+  border: 1px solid rgba(25, 24, 37, 0.1);
+  background: #fff;
+}
+.orange-list h3 {
+  color: #ff5722;
+  font-family: "Poppins";
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.orange-list p {
+  color: #191825;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 160%;
+}
+/*home section 4's tablet style  */
+@media (min-width: 768px) {
+  .section4 {
+    padding: 0;
+  }
+  .section4 img {
+    max-width: 871px;
+  }
+}
+
+/*home section 4's desktop style  */
+@media (min-width: 1440px) {
+  .section4 img {
   }
 }
