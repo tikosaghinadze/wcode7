@@ -559,3 +559,214 @@ header {
     text-align: left;
   }
 }
+
+/* Section 5 Mobile Styles */
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.features span {
+  color: #f85e9f;
+  text-align: center;
+  align-items: center;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.features h4 {
+  margin-top: 16px;
+  color: #191825;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.features .features_desk {
+  margin-top: 30px;
+  color: rgba(25, 24, 37, 0.5);
+  line-height: 160%;
+  width: 334px;
+}
+
+.features img {
+  padding: 32px;
+  border-radius: 32px;
+}
+
+.location_img {
+  background-color: #ff5722;
+}
+
+.calendar_img {
+  background-color: #facd49;
+}
+
+.calendar_div {
+  border-radius: 32px;
+  padding: 32px;
+  border: 1px solid rgba(25, 24, 37, 0.1);
+  background: #fff;
+}
+
+.location_div {
+  display: flex;
+  flex-direction: column;
+  border-radius: 32px;
+  padding: 32px;
+  background: #fff;
+}
+
+.ticket_div {
+  border-radius: 32px;
+  padding: 32px;
+  background: #fff;
+}
+
+.ticket_img {
+  background-color: #f85e9f;
+}
+
+.features div {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.features div h5 {
+  margin-top: 32px;
+  color: #191825;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.features div p {
+  color: rgba(25, 24, 37, 0.5);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  max-width: 270px;
+  text-align: left;
+}
+
+/* Section 5 Tablet Styles */
+@media (min-width: 768px) {
+  .features span {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 4.6px;
+    text-transform: uppercase;
+  }
+  .features h4 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .features .features_desk {
+    font-size: 18px;
+    line-height: 160%;
+    width: 832px;
+    margin-bottom: 32px;
+  }
+  .features div {
+    display: flex;
+    flex-direction: column;
+  }
+  .features .location_div {
+    display: flex;
+    flex-direction: row;
+    min-width: 832px;
+    align-items: center;
+    text-align: center;
+  }
+  .features .calendar_div {
+    display: flex;
+    flex-direction: row;
+    min-width: 832px;
+    align-items: center;
+    text-align: center;
+  }
+  .features .ticket_div {
+    display: flex;
+    flex-direction: row;
+    min-width: 832px;
+    align-items: center;
+    text-align: center;
+  }
+  /* .calendar_div {
+    width: 832px;
+  } */
+  /* .ticket_div {
+    width: 832px;
+  } */
+  .features div h5 {
+    margin-top: 0px;
+  }
+  .features div p {
+    max-width: 100%;
+  }
+  .features img {
+    margin-right: 32px;
+  }
+}
+
+/* Section 5 Desktop Styles */
+
+@media (min-width: 1440px) {
+  .features {
+    padding-inline: 64px;
+    align-items: start;
+    margin-bottom: 100px;
+  }
+  .features div {
+    width: 99%;
+  }
+  .features p {
+    text-align: left;
+  }
+  .ticket_div {
+    width: 832px;
+  }
+}
+
+/* Footer Mobile Styles */
+footer {
+  margin-top: 60px;
+  padding: 16px;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+footer div h2 {
+  color: #191825;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+footer p {
+  color: rgba(25, 24, 37, 0.5);
+  font-weight: 450;
+  line-height: 160%;
+  margin-bottom: 32px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
