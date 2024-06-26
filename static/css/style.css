@@ -466,7 +466,6 @@ header {
 .travel-pink span {
   padding-bottom: 16px;
   color: #f85e9f;
-  text-align: center;
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 700;
@@ -477,7 +476,6 @@ header {
 .bold-p {
   padding-bottom: 32px;
   color: #191825;
-  text-align: center;
   font-family: "Poppins";
   font-size: 32px;
   font-weight: 700;
@@ -485,7 +483,6 @@ header {
 }
 .light-p {
   color: rgba(25, 24, 37, 0.5);
-  text-align: center;
   font-family: Inter;
   font-size: 16px;
   line-height: 160%;
@@ -528,8 +525,37 @@ header {
   .section4 img {
     max-width: 871px;
   }
+  .offers ul {
+    display: grid;
+    grid-template-columns: 1fr 30fr;
+    margin-top: 64px;
+    gap: 32px;
+  }
 }
 
 /*home section 4's desktop style  */
 @media (min-width: 1440px) {
+  .section4 {
+    flex-direction: row;
+  }
+  .section4 img {
+    width: 871px;
+    height: 697px;
+  }
+  .offers ul li {
+    width: 204px;
+  }
+  .travel-pink {
+    align-items: start;
+  }
+  .offers ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 700px;
+  }
+  .light-p {
+    width: 441px;
+    text-align: left;
+  }
 }
